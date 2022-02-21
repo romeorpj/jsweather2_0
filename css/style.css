@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'], li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html {
+    /* resetting font size to 10px makes rem math much easier*/
+    font-size: 10px;
+    box-sizing: border-box;
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    color: #d3d8d5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ########## END GLOBAL ########## */
+:root {
+    --bg-black: #020207;
+    --orange: #ce834e;
+}
+
+.app-container {
+    height: 100vh;
+    background: var(--bg-black);
+    display: flex;
+    /*width: 200%;*/
+}
+
+.main-page {
+    width: 80%;
+    height: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+
+    font-size: 1.6rem;
+}
+
+.main-page-hero-image {
+    height: 50%;
+    width: 100%;
+}
+
+.main-page-hero-image img {
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.main-page-bottom-content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 55px;
+}
+
+.main-page-bottom-content h2 {
+    text-align: center;
+}
+
+.main-page-bottom-content_span {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.main-page-bottom-content p {
+    font-weight: 300;
+    text-align: center;
+    padding: 10%;
+}
+
+.main-page-bottom-content button {
+    width: 80%;
+    height: 43px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: var(--orange);
+    font-weight: 600;
+    color: var(--bg-black);
+    letter-spacing: .075em;
+    cursor: pointer;
+    transition: background 300ms ease-in-out;
+}
+
+.main-page-bottom-content button:active {
+    transform: scale(.97);
+}
+
+.main-page-bottom-content button:hover {
+background: #ad5d32;
+
+}
