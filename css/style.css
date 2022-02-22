@@ -75,12 +75,14 @@ select {
 :root {
     --bg-black: #020207;
     --orange: #ce834e;
+    --bdr-radius:5%;
+    --bg-secondary: #171829;
 }
 
 .app-container {
     height: 100vh;
     background: var(--bg-black);
-    display: flex;
+    /*display: flex;*/
     /*width: 200%;*/
 }
 
@@ -147,4 +149,68 @@ select {
 .main-page-bottom-content button:hover {
 background: #ad5d32;
 
+}
+
+/* ########## SECONDARY PAGE ########## */
+
+.secondary-page{
+    background: var(--bg-secondary);
+    border-top-left-radius: var(--bdr-radius);
+    border-top-right-radius: var(--bdr-radius);
+    width: 100%;
+    height: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+
+    font-size: 1.6rem;
+}
+
+.secondary-page h2{
+    padding: 30px 30px 0 30px;
+    letter-spacing: 0.03em;
+}
+.secondary-page-weather-now{
+    width: 100%;
+}
+
+.secondary-page-weather-now img{
+    margin: 0 auto;
+    width: 45%;
+}
+.secondary-page-weather-now_description, .secondary-page-weather-now_temp {
+    text-align: center;
+    font-size: 1.8rem;
+}
+.secondary-page-weather-now_temp{
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.secondary-page-weather-now-details{
+    display: flex;
+    width: 90%;
+margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 200;
+    font-size: 1.2rem;
+}.feels-like, .humidity,.chance-of-rain{
+     display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .btn-to-main{
+     width: 50px;
+     border-radius: 50%;
+ }
+
+.secondary-page-weather-now-details img{
+    width: 35%;
 }
