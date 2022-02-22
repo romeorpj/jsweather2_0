@@ -14,54 +14,61 @@
 <div class="app-container">
     <!--App container controls the background color of the entire app-->
     <main class="main-page">
-<!--        main page class is in charge of the front page-->
-<!--        Main is the end of the first page-->
-<!--        NOTE* hero image changes from sun to moon based on time of day-->
-        <div class="main-page-hero-image">
-            <img src="/img/Day256px.png" alt="graphical depiction of current time of the day">
+        <!--        main page class is in charge of the front page-->
+        <!--        Main is the end of the first page-->
+        <!--        NOTE* hero image changes from sun to moon based on time of day-->
+        <div class="main-page-wrapper">
 
-<!--            ***Insert changing image here-->
+            <div class="main-page-hero-image">
+                <img src="/img/Day256px.png" alt="graphical depiction of current time of the day">
+
+                <!--            ***Insert changing image here-->
+            </div>
+            <div class="main-page-bottom-content">
+                <h2>Discover The Weather <span class="main-page-bottom-content_span">In Your City</span></h2>
+                <p>Go ahead and click for new up-to-date weather data</p>
+                <button type="submit" class="main-page-button">Get Weather</button>
+            </div>
         </div>
-        <div class="main-page-bottom-content">
-            <h2>Discover The Weather <span class="main-page-bottom-content_span">In Your City</span></h2>
-            <p>Go ahead and click for new up-to-date weather data</p>
-            <button type="submit">Get Weather</button>
-        </div>
+
+
+        <section class="secondary-page secondary-page-active">
+            <!--        secondary page controls the right particl of the horizontal sliding page-->
+            <h2>Today's Report</h2>
+            <div class="secondary-page-weather-now">
+                <!--            weather image changes based on temp-->
+                <img src="/img/Day256px.png" alt="graphical depiction of current time of the day">
+
+                <!--            the p tag here controls todays temp description-->
+                <p class="secondary-page-weather-now_description">It's Cloudy</p>
+                <p class="secondary-page-weather-now_temp">29<span>&deg; </span></p>
+            </div>
+            <section class="secondary-page-weather-now-details">
+                <!--            Add forecast weather data here-->
+                <div class="feels-like"><img src="/img/Day256px.png"
+                                             alt="graphical depiction of current time of the day">
+                    <p>Feels like</p></div>
+                <div class="humidity"><img src="/img/Day256px.png" alt="graphical depiction of current time of the day">
+                    <p>
+                        Humidity</p></div>
+                <div class="chance-of-rain"><img src="/img/Day256px.png"
+                                                 alt="graphical depiction of current time of the day">
+                    <p>Chance of rain</p></div>
+            </section>
+            <section class="secondary-page-forecast">
+                <!--            Add forecast weather data here-->
+                <p>forecast</p>
+                <p>forecast * 8</p>
+            </section>
+
+            <button class="btn-to-main">Go Back</button>
+
+        </section>
+
+
     </main>
 
 
-
-
-    <section class="secondary-page">
-<!--        secondary page controls the right particl of the horizontal sliding page-->
-        <h2>Today's Report</h2>
-        <div class="secondary-page-weather-now">
-<!--            weather image changes based on temp-->
-            <img src="/img/Day256px.png" alt="graphical depiction of current time of the day">
-
-<!--            the p tag here controls todays temp description-->
-            <p class="secondary-page-weather-now_description">It's Cloudy</p>
-            <p class="secondary-page-weather-now_temp">29<span>&deg; </span></p>
-        </div>
-        <section class="secondary-page-weather-now-details">
-<!--            Add forecast weather data here-->
-            <div class="feels-like"><img src="/img/Day256px.png" alt="graphical depiction of current time of the day"><p>Feels like</p></div>
-            <div class="humidity"><img src="/img/Day256px.png" alt="graphical depiction of current time of the day"><p>
-                Humidity</p></div>
-            <div class="chance-of-rain"><img src="/img/Day256px.png"
-                                alt="graphical depiction of current time of the day"><p>Chance of rain</p></div>
-
-
-        </section>
-        <section class="secondary-page-forecast">
-            <!--            Add forecast weather data here-->
-            <p>forecast</p>
-            <p>forecast * 8</p>
-        </section>
-
-    <button class="btn-to-main">Go Back</button>
-
-    </section>
 </div>
 </body>
 </html>

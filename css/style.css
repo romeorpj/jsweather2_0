@@ -75,26 +75,33 @@ select {
 :root {
     --bg-black: #020207;
     --orange: #ce834e;
-    --bdr-radius:5%;
-    --bg-secondary: #171829;
+    --bdr-radius:10%;
+    --bg-secondary: #4f5486;
+    /*--bg-secondary: #171829;*/
 }
 
 .app-container {
-    height: 100vh;
+    height: 100%;
     background: var(--bg-black);
     /*display: flex;*/
     /*width: 200%;*/
+
 }
 
 .main-page {
-    width: 80%;
+    width: 100%;
     height: 100%;
     max-width: 720px;
     margin: 0 auto;
-
     font-size: 1.6rem;
-}
+    position: relative;
+    overflow: hidden;
 
+}
+.main-page-wrapper{
+    padding: 0 10%;
+    height: 100vh;
+}
 .main-page-hero-image {
     height: 50%;
     width: 100%;
@@ -130,7 +137,7 @@ select {
 }
 
 .main-page-bottom-content button {
-    width: 80%;
+    width: 95%;
     height: 43px;
     margin: 0 auto;
     border-radius: 10px;
@@ -164,10 +171,16 @@ background: #ad5d32;
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
-
     font-size: 1.6rem;
+    position: absolute;
+    transform: translateY(0);
+    transition: top 300ms 600ms ease-in-out;
+
 }
 
+.secondary-page.slide{
+transform: translateY(-50px);
+}
 .secondary-page h2{
     padding: 30px 30px 0 30px;
     letter-spacing: 0.03em;
