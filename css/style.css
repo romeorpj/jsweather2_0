@@ -91,7 +91,7 @@ select {
 .main-page {
     width: 100%;
     height: 100%;
-    max-width: 720px;
+    max-width: 420px;
     margin: 0 auto;
     font-size: 1.6rem;
     position: relative;
@@ -166,20 +166,26 @@ background: #ad5d32;
     border-top-right-radius: var(--bdr-radius);
     width: 100%;
     height: 100%;
-    max-width: 720px;
+    max-width: 420px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
     font-size: 1.6rem;
     position: absolute;
-    transform: translateY(0);
-    transition: top 300ms 600ms ease-in-out;
+    bottom: -100vh;
+    /*transform: translateY(50px);*/
+    transition: all 550ms  ease-in-out;
+
 
 }
 
-.secondary-page.slide{
-transform: translateY(-50px);
+.slide{
+    bottom: -80px;
+/*transform: translateY(50px);*/
+
+    transition: all 550ms  ease-in-out;
+
 }
 .secondary-page h2{
     padding: 30px 30px 0 30px;
@@ -211,18 +217,32 @@ margin: 0 auto;
     justify-content: space-evenly;
     font-weight: 200;
     font-size: 1.2rem;
-}.feels-like, .humidity,.chance-of-rain{
+}
+.feels-like, .humidity,.chance-of-rain{
      display: flex;
     flex-direction: column;
      align-items: center;
      justify-content: center;
-
  }
 
  .btn-to-main{
-     width: 50px;
+     width: 70px;
+     height: 70px;
      border-radius: 50%;
+     letter-spacing: .075em;
+     cursor: pointer;
+     line-height: 1;
+     margin-left: 30px;
+     margin-top: 45px;
  }
+ .btn-to-main:active{
+    transform: scale(.97);
+}
+
+ .btn-to-main:hover{
+    background: #dedede;
+
+}
 
 .secondary-page-weather-now-details img{
     width: 35%;
