@@ -1,7 +1,7 @@
 "use strict";
 let secondaryPage = document.querySelector(".secondary-page")
 let mainPage = document.querySelector(".main-page");
-
+let apiKey = ee93106d0f65de4553d6531305b257fe;
 
 //Event listener that slides up the second page
 //this works by adding the slide class that was defined and created in the css
@@ -21,3 +21,8 @@ document.querySelector(".btn-to-main").addEventListener("click",()=>{
 })
 
 //going to fetch open weather api
+//use the geo-navigator to get access to lat and long
+
+
+//openwether onecall api
+https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
