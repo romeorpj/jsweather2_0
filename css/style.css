@@ -75,7 +75,7 @@ select {
 :root {
     --bg-black: #020207;
     --orange: #ce834e;
-    --bdr-radius:10%;
+    --bdr-radius:0;
     --bg-secondary: #4f5486;
     /*--bg-secondary: #171829;*/
 }
